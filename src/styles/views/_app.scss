@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import '../utils/variables.scss';
+
+.App {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 2em;
+    min-height: 100vh;
+    position: relative;
+    background-color: $app-background-color;
+};

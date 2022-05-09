@@ -1,0 +1,45 @@
+@import '../utils/variables.scss';
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+    &__presentation {
+        padding: 10px;
+        background-color: $presentation-color;
+        color: #EAE7D7;
+        margin: 2.5vh ;
+        border-radius: 5px;
+    }
+
+    &__presentation:hover {
+        background-color: $presentation-color-hover;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__searchbar{
+        width: 75vw;
+        align-self: center;
+        margin-bottom: 1.2vh;
+    }
+
+    &__pokeList {
+        margin-top: 1.5vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & > div {
+            margin: 2.5vw 1.5vw;
+            background-color: $card-color;
+        }
+
+        & > div:hover {
+            background-color: $card-color-hover;
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.1);
+        }
+    }
+}
